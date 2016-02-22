@@ -22,7 +22,7 @@ SAP CRM Case Study for CTI (Computer Training Institue), which consists Courses,
   * will be constructed as subset of fields of **CRMT_OBJ_PROPERTIES_TAB**
 
 | Object Name | Kind | Root | Attribute St. | Key St. | Create St. | Result Object | Object Handler |
-|--|--|--|--|--|--|--|--|
+|---|---|---|---|---|---|---|---|
 |**CTICourse**| A - Root||ZCTI_ST_COURSE_ATTR|ZCTI_ST_COURSE_KEY|ZCTI_ST_COURSE_CREATE||ZCTI_CL_COURSE|
 |**CTICourseSearch**| D - Search|CTICourse|ZCTI_ST_COURSE_SEARCH|||CTICourse|ZCTI_CL_COURSE|
 
@@ -31,7 +31,7 @@ SAP CRM Case Study for CTI (Computer Training Institue), which consists Courses,
   * will be constructed as subset of fields of **CRMT_RELATION_DETAIL_TAB**
 
 | Object A | Relation | Object B | Cardinality A | Cardinality B | Relation Kind |
-|--|--|--|--|--|--|
+|---|---|---|---|---|---|
 |**--**|--|--|--|--|--|
 
 * Implementation Class **ZCTI_CL_MODEL_IL**
@@ -40,7 +40,7 @@ SAP CRM Case Study for CTI (Computer Training Institue), which consists Courses,
     * **CL_CRM_GENIL_ABSTR_COMPONENT2** for objects with KEY other than **GUID**
 
 | Method Redefined | Usage |
-|--|--|
+|---|---|
 |**GET_OBJECT_PROPS**| provides available objects for Component ZCTI using **ZCTI_DB_ALLOB_IL**|
 |**GET_MODEL**| provides object relations for Component ZCTI using **ZCTI_DB_MODEL_IL**|
 |**GET_QUERY_RESULT**| this is a simple query, where we need to fetch Object Keys from buffer/db based on **IT_PARAMETERS** and put into **IV_ROOT_LIST**, which will call **GET_OBJECTS** to fetch attributes|
