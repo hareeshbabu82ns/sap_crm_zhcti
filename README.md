@@ -51,3 +51,8 @@ SAP CRM Case Study for CTI (Computer Training Institue), which consists Courses,
 |**DELETE_OBJECTS**|delete objects from buffer/db in **CT_OBJECT_LIST** and set **LINE-SUCCESS** to true.|
 |**INIT_OBJECTS**|to reset the API buffers in **CT_OBJECT_LIST** and set **LINE-SUCCESS** to true.|
 |**LOCK_OBJECTS**|to lock the root objects from **CT_OBJECT_LIST** and set **LINE-SUCCESS** to true.|
+
+## Milestone
+| Nugget(ddmmyyyy) | Description |
+|----|----|
+|ZCRM_CTI_28022016| Course CRUD |
